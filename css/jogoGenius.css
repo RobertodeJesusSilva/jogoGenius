@@ -1,0 +1,161 @@
+
+body{
+    margin: 0;
+    background-color: #d0ffef;
+}
+
+.jogoPrincipal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: "azul amarelo" "verde vermelho";
+    gap: 10px;
+    border: solid 5px #000;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 40%;
+    height: 90%;
+}
+
+.azul{
+    grid-area: azul;
+    background-color: #0000ff;
+    border-top-left-radius: 100%;
+    border: 2px solid #000;
+}
+
+.amarela{
+    grid-area: amarelo;
+    background-color: #ffff00;
+    border-top-right-radius: 100%;
+    border: 2px solid #000;
+}
+
+.verde{
+    grid-area: verde;
+    background-color: #008000;
+    border-bottom-left-radius: 100%;
+    border: 2px solid #000;
+}
+
+.vermelha{
+    grid-area: vermelho;
+    background-color: #ff0000;
+    border-bottom-right-radius: 100%;
+    border: 2px solid #000;
+}
+
+.selecionada{
+    opacity: 0.3;
+}
+
+#miolo{
+    position: absolute;
+    background-color: #000;
+    width: 22%;
+    height: 50%;
+    z-index: 1;
+    border: solid 6px #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#miolo h1{
+    background-color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    border: solid 2px #ff0000;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+#placar{
+    background-color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    border: solid 2px #ff0000;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+#inicial{
+    position: absolute;
+    z-index: 2;
+    width: 28%;
+    height: 48%;
+    padding: 1rem;
+    text-align: center;
+    background-color: lawngreen;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 770px) {
+    .genius{
+        width: 40%;
+        height: 85%;
+        gap: 5px;
+    }
+
+    #miolo{
+        width: 22%;
+        height: 50%;
+    }
+
+    #miolo h1{
+        font-size: 1.7rem;
+        padding: 0.2rem;
+        margin-top: 1.5rem;
+    }
+
+    #placar{
+        font-size: inherit;
+        margin-top: 1rem;
+    }
+
+    #inicial{
+        width: 28%;
+        height: 48%;
+        padding: 0.5rem;
+        font-size: 0.55rem;
+    }
+    
+}
+
+@media (max-width: 1024px) and (min-width: 771px) {
+    .genius{
+        width: 45%;
+        height: 60%;
+    }
+
+    #miolo{
+        width: 25%;
+        height: 35%;
+    }
+
+    #miolo h1{
+        font-size: 2.5rem;       
+    }
+
+    #inicial{
+        width: 28%;
+        height: 48%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+}
+
+

@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Roberto de Jesus, robertodejesus671@gmail.com">
+        <link rel="stylesheet" type="text/css" href="css/jogoGenius.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg">
+        <title>Jogo Gênius</title>
+    </head>
+
+    <body>
+        <div class="jogoPrincipal">
+            <div class="genius">
+                <div class="azul"></div>
+                <div class="amarela"></div>
+                <div class="verde"></div>
+                <div class="vermelha"></div>
+            </div>
+            <div id="miolo">
+                <h1>Gênius</h1>
+                <h2 id="placar"></h2>
+            </div>
+            <div id="inicial" onclick="comecarJogo()">
+                <h2>Bem vindo ao Gênius!</h2>
+                <p>
+                    O Gênius é um jogo de memória.
+                    O jogo vai fornecer uma sequencia de cores que piscam, você tem que clicar na mesma sequência.
+                    Ganha o jogo se acertar a sequência.
+                    Divirta-se!
+                </p>
+                <h3>Clique aqui para começar o jogo.</h3>
+            </div>
+        </div>
+
+    <audio id="somAmarelo" src="sons/amarelo.mp3" preload="auto"></audio>
+    <audio id="somAzul" src="sons/azul.mp3" preload="auto"></audio>
+    <audio id="somVerde" src="sons/verde.mp3" preload="auto"></audio>
+    <audio id="somVermelho" src="sons/vermelho.mp3" preload="auto"></audio>
+    <audio id="somPerdeu" src="sons/perdeu.mp3" preload="auto"></audio>
+        <script type="text/javascript" src="js/jogoGenius.js"></script>
+    </body>
+</html>
